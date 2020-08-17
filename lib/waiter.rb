@@ -44,7 +44,7 @@ class Waiter
     # return customer name with highest value
 
     Customer.all.each_with_index do |customer, i|
-      self.meals.select {|meal| meal.customer == customer}
+      customer_i = self.meals.select {|meal| meal.customer == customer}
     end
   end
 
