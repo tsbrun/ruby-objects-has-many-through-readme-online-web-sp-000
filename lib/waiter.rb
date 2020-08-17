@@ -29,23 +29,4 @@ class Waiter
     best_tipped_meal.customer
   end
 
-  def most_frequent_customer
-    # go through a waiter's meals
-    # go through every customer
-    # for every meal with a customer's name, increment a counter
-    # return the counter with the highest value
-
-    # go through a waiter's meals
-    # count how many meals for each customer
-    # return customer with highest count
-
-    # return meals with this customer name
-    # do for each customer name
-    # return customer name with highest value
-
-    Customer.all.each_with_index do |customer, i|
-      customer_i = self.meals.select {|meal| meal.customer == customer}
-    end
-  end
-
 end
